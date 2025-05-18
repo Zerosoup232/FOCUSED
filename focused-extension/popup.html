@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUSED Blocker</title>
+    <style>
+        body {
+            width: 300px;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        input {
+            width: 80%;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 10px;
+        }
+        button {
+            padding: 8px;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>FOCUSED Blocker</h2>
+    <input type="text" id="siteInput" placeholder="Enter site to block">
+    <button id="addSiteBtn">Add</button>
+    <ul id="siteList"></ul>
+    <script src="popup.js"></script>
+</body>
+</html>
+<h3>Set Focus Timer</h3>
+<input type="number" id="focusDuration" placeholder="Enter minutes">
+<button id="startFocus">Start Focus</button>
+<button id="endFocus" disabled>End Focus</button>
